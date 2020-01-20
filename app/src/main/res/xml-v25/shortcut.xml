@@ -1,0 +1,50 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="main"
+        android:enabled="true"
+        android:icon="@drawable/ic_main"
+        android:shortcutShortLabel="@string/shortcutmain">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.appshortcut"
+            android:targetClass="com.appshortcut.MainActivity" >
+            <extra android:name="shortcutAction" android:value="main" />
+
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="voice"
+        android:enabled="true"
+        android:icon="@drawable/ic_mic_on"
+        android:shortcutShortLabel="@string/saysmile">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.appshortcut"
+            android:targetClass="com.appshortcut.MainActivity" >
+            <extra android:name="shortcutAction" android:value="voice" />
+
+        </intent>
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="selfie"
+        android:enabled="true"
+        android:icon="@drawable/ic_selfie"
+        android:shortcutShortLabel="@string/shortcutselfie">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.appshortcut"
+            android:targetClass="com.appshortcut.MainActivity" >
+            <extra android:name="shortcutAction" android:value="selfie" />
+
+        </intent>
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+</shortcuts>
